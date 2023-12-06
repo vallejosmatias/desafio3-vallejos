@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Oso",
+    "description": "articulado 3d",
+    "price": 3500,
+    "thumbnail": "imagen2.jpg",
+    "code": "DEF457",
+    "stock": 30
+  },
+  {
+    "id": 2,
+    "title": "Dino",
+    "description": "articulado 3d",
+    "price": 1500,
+    "thumbnail": "imagen3.jpg",
+    "code": "DEF456",
+    "stock": 20
+  },
+  {
+    "id": 2,
+    "title": "Pulpo",
+    "description": "articulado 3d",
+    "price": 5500,
+    "thumbnail": "imagen4.jpg",
+    "code": "DEF458",
+    "stock": 15
+  }
+]
