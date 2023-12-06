@@ -1,11 +1,22 @@
 import express from 'express';
 import ProductManager from '../productManager.js';
+import path from 'path';
+import  {fileURLToPath}  from 'url';
+
+import  dirname  from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
 
+//ruta absoluta
+const productsFilePath = path.resolve(__dirname, "../data/products.json");
+
 // Crear instancia de ProductManager
-const productManager = new ProductManager('../data/products.json');
+const productManager = new ProductManager(productsFilePath);
 
 // Inicializar el archivo si no existe
 productManager.initializeFile().catch(error => console.error(error));
