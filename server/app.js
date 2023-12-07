@@ -1,9 +1,9 @@
 import express from 'express';
 import ProductManager from '../productManager.js';
-import path from 'path';
 import  {fileURLToPath}  from 'url';
+import  {dirname,join, resolve}  from 'path';
+import path from 'path';
 
-import  dirname  from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 
